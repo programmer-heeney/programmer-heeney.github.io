@@ -80,19 +80,12 @@
         <div class="major">
           <div class="major__icon">
             <i class="fab fa-html5"></i>
-          </div>
-          <h2 class="major__title">HTML</h2>
-          <div class="major__description">
-            The basic structure of sites
-          </div>
-        </div>
-        <div class="major">
-          <div class="major__icon">
             <i class="fab fa-css3-alt"></i>
           </div>
-          <h2 class="major__title">CSS</h2>
+          <h2 class="major__title">HTML/CSS</h2>
           <div class="major__description">
-            Control presentation, formatting, and layout
+            The basic structure of sites,<br />Control presentation, formatting,
+            and layout
           </div>
         </div>
         <div class="major">
@@ -104,8 +97,31 @@
             Control the behavior of different elements
           </div>
         </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-react"></i>
+          </div>
+          <h2 class="major__title">React</h2>
+          <div class="major__description">
+            An open-source JavaScript library,<br />Single-page application,<br />Reusable
+            UI components
+          </div>
+        </div>
       </div>
       <div class="about__jobs">
+        <div class="job">
+          <img
+            src="imgs/jobs/flag-UK.jpg"
+            alt="Working holiday"
+            class="job__logo"
+          />
+          <div class="job__description">
+            <p class="job__name">
+              Working holiday in the United Kingdom
+            </p>
+            <p class="job__period">Oct 2018 - Current</p>
+          </div>
+        </div>
         <div class="job">
           <img src="imgs/jobs/etri.jpg" alt="ETRI" class="job__logo" />
           <div class="job__description">
@@ -159,19 +175,19 @@
             <div class="skill">
               <div class="skill__description">
                 <span>CSS</span>
-                <span>85%</span>
+                <span>90%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 85%;"></div>
+                <div class="skill__value" style="width: 90%;"></div>
               </div>
             </div>
             <div class="skill">
               <div class="skill__description">
                 <span>JavaScript</span>
-                <span>30%</span>
+                <span>80%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 30%;"></div>
+                <div class="skill__value" style="width: 80%;"></div>
               </div>
             </div>
             <div class="skill">
@@ -186,10 +202,10 @@
             <div class="skill">
               <div class="skill__description">
                 <span>React</span>
-                <span>0%</span>
+                <span>50%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 0%;"></div>
+                <div class="skill__value" style="width: 50%;"></div>
               </div>
             </div>
             <div class="skill">
@@ -232,25 +248,39 @@
         <h3>Projects</h3>
         <div class="work__categories">
           <button class="category__btn selected" data-filter="*">
-            All<span class="category__count">5</span>
+            All<span class="category__count">6</span>
           </button>
-          <button class="category__btn" data-filter="front-end">
-            Front-end<span class="category__count">5</span>
+          <button class="category__btn" data-filter="html/css">
+            HTML/CSS<span class="category__count">1</span>
           </button>
-          <button class="category__btn" data-filter="back-end">
-            Back-end<span class="category__count">0</span>
+          <button class="category__btn" data-filter="javascript">
+            JavaScript<span class="category__count">4</span>
           </button>
-          <button class="category__btn" data-filter="mobile">
-            Mobile<span class="category__count">0</span>
+          <button class="category__btn" data-filter="react">
+            React<span class="category__count">1</span>
           </button>
         </div>
 
         <div class="work__projects">
+          <a href="#" class="project" target="_blank" data-type="react"
+            ><img
+              src="imgs/projects/movie-list.png"
+              alt="movie-list"
+              class="project__img"
+            />
+            <div class="project__description">
+              <h3>Movie List</h3>
+              <span
+                >A simple movie list by using <i>The Movie Database API</i> with
+                React</span
+              >
+            </div>
+          </a>
           <a
             href="https://github.com/programmer-heeney/my-shopping-organiser"
             class="project"
             target="_blank"
-            data-type="front-end"
+            data-type="javascript"
             ><img
               src="imgs/projects/my-shopping-organiser.png"
               alt="my-shopping-organiser"
@@ -267,7 +297,7 @@
             href="https://github.com/programmer-heeney/mini-game-online-shop.git"
             class="project"
             target="_blank"
-            data-type="front-end"
+            data-type="javascript"
             ><img
               src="imgs/projects/mini-game-online-shop.png"
               alt="mini-game-online-shop"
@@ -285,7 +315,7 @@
             href="https://github.com/programmer-heeney/calculator.git"
             class="project"
             target="_blank"
-            data-type="front-end"
+            data-type="javascript"
             ><img
               src="imgs/projects/calculator.jpg"
               alt="Calculator"
@@ -300,7 +330,7 @@
             href="https://github.com/programmer-heeney/youtube-site.git"
             class="project"
             target="_blank"
-            data-type="front-end"
+            data-type="html/css"
             ><img
               src="imgs/projects/youtube.png"
               alt="Youtube"
@@ -315,7 +345,7 @@
             href="https://github.com/programmer-heeney/responsive-nav-bar.git"
             class="project"
             target="_blank"
-            data-type="front-end"
+            data-type="javascript"
             ><img
               src="imgs/projects/navbar.png"
               alt="Navbar"
