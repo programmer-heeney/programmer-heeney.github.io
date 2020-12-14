@@ -164,11 +164,21 @@ p {
   text-align: center;
 }
 
+@keyframes fadein-ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .home__avatar {
   width: 250px;
   height: 250px;
   border-radius: 50%;
   border: 2px solid var(--color-light-white);
+  animation: fadein-ani 2s ease-in;
 }
 
 .home__title,
