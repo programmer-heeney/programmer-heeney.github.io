@@ -102,3 +102,5 @@ function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({ behavior: "smooth" });
 }
+
+// 스크롤시 메뉴 활성화 시키기
