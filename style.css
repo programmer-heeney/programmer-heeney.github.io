@@ -186,6 +186,22 @@ p {
   color: var(--color-white);
 }
 
+@keyframes font-color-ani {
+  0% {
+    color: var(--color-light-white);
+  }
+  50% {
+    color: var(--color-yellow);
+  }
+  100% {
+    color: var(--color-light-white);
+  }
+}
+
+.home__title strong {
+  animation: font-color-ani 0.8s infinite;
+}
+
 .home__contact {
   color: var(--color-white);
   font-size: var(--font-regular);
