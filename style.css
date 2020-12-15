@@ -4,6 +4,7 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
+  --color-background-white: #fafafa;
   --color-pink: #fe918d;
   --color-dark-pink: #ff6863;
   --color-grey: #616161;
@@ -158,10 +159,24 @@ p {
 
 /* Home */
 #home {
-  background: url("imgs/home-background.png") center/cover no-repeat;
+  /* background: url("imgs/home-background.png") center/cover no-repeat; */
   padding: 40px;
   padding-top: 120px;
   text-align: center;
+}
+
+.home__background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.home__background img {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  filter: brightness(0.5);
 }
 
 @keyframes fadein-ani {
@@ -229,6 +244,9 @@ p {
 }
 
 /* About */
+#about {
+  background-color: var(--color-background-white);
+}
 .about__majors {
   display: flex;
   justify-content: space-between;
@@ -350,6 +368,10 @@ p {
 }
 
 /* Work */
+#work {
+  background-color: var(--color-background-white);
+}
+
 .work__categories {
   margin: 40px;
 }
