@@ -201,6 +201,34 @@ p {
   color: var(--color-white);
 }
 
+.home__title {
+  background: 50% 100% / 50% 50% no-repeat
+    radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.15em;
+  animation: reveal 3000ms ease-in-out forwards 200ms,
+    glow 2500ms linear infinite 2000ms;
+}
+@keyframes reveal {
+  80% {
+    letter-spacing: 0.15em;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 0.15em #fff;
+  }
+}
+
+.home__title strong {
+  animation: font-color-ani 0.8s infinite;
+}
+
 @keyframes font-color-ani {
   0% {
     color: var(--color-light-white);
@@ -211,10 +239,6 @@ p {
   100% {
     color: var(--color-light-white);
   }
-}
-
-.home__title strong {
-  animation: font-color-ani 0.8s infinite;
 }
 
 .home__contact {
